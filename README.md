@@ -47,13 +47,25 @@ Algoritma Dijkstra bekerja dengan membuat jalur ke satu simpul optimal pada seti
 6. Set “Node belum dilewati” dengan jarak terkecil (dari node keberangkatan) sebagai “Node Keberangkatan” selanjutnya dan ulangi langkah e.
 
 
-Sebagai contoh hitunglah Jarak terdekat dari V1 ke V7 pada gambar berikut ini.
--------------------
-![Vertex edge graph dijkstra](https://user-images.githubusercontent.com/66405353/119210519-c53fea00-bad6-11eb-9013-562596531212.png)
--------------------
-Hasil setiap stepnya dapat dilihat pada tabel berikut ini.
--------------------
-![Table dijkstra](https://user-images.githubusercontent.com/66405353/119210522-c6711700-bad6-11eb-864c-af70f3051b00.png)
--------------------
-Dengan demikian jarak terpendek dari V1 ke V7 adalah 16 dengan jalur V1->V2->V3->V5->V6->V7
-## 
+Sebagai contoh hitunglah Jarak terdekat dari V1 ke V7 pada gambar berikut ini. \
+![Vertex edge graph dijkstra](https://user-images.githubusercontent.com/66405353/119210519-c53fea00-bad6-11eb-9013-562596531212.png) \
+Hasil setiap stepnya dapat dilihat pada tabel berikut ini. \
+![Table dijkstra](https://user-images.githubusercontent.com/66405353/119210522-c6711700-bad6-11eb-864c-af70f3051b00.png) \
+Dengan demikian jarak terpendek dari V1 ke V7 adalah 16 dengan jalur V1->V2->V3->V5->V6->V7 \
+
+## Karakteristik Dijkstra
+* Berfungsi optimal untuk **Weighted Graph**.
+* Merupakan algoritma path-finding **Uninformed**, artinya tidak perlu mengetahui lokasi target.
+* Algoritme A* adalah variasi **Informed** dari Dijkstra.
+* Tidak cocok untuk **Unweighted Graph**, karena jarak setiap node sama.
+* Tidak berfungsi (bermasalah) pada **Negative Weighted Graph**.
+* Kompleksitas waktu Algoritma Dijkstra adalah O(E logV).
+
+## Visualisasi 
+
+## Source
+https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+https://stackoverflow.com/questions/13031462/difference-and-advantages-between-dijkstra-a-star
+https://mti.binus.ac.id/2017/11/28/algoritma-dijkstra/
+https://hurna.io/academy/algorithms/maze_pathfinder/      
+https://en.wikipedia.org/wiki/Dijkstra's_algorithm
